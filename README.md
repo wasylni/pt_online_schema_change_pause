@@ -6,7 +6,7 @@ Plugin when executed with your `pt-online-schema-change` command will pause in t
 
 just add `--plugin /path/to/fis_pt_online_schema_change_plugin.pl` to your  `pt-online-schema-change` command
 
-#####what will it do to your run:
+#####what will it do to your `pt-online-schema-change` run:
 
 it will create plain text file in `/opt/pt_schema_change_wait.txt` your `pt-online-schema-change` command should run as usual until very last step, it will pause `before_swap_tables` is executed.
 
