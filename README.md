@@ -2,9 +2,13 @@
  
 Plugin when executed with your `pt-online-schema-change` command will pause in the last stage of execution, untill file `/opt/pt_schema_change_wait.txt` is deleted.
 
-How to run:
+#####How to run:
 
 just add `--plugin /path/to/fis_pt_online_schema_change_plugin.pl` to your  `pt-online-schema-change` command
+
+#####what will it do to your run:
+
+it will create plain text file in `/opt/pt_schema_change_wait.txt` your `pt-online-schema-change` command should run as usual until very last step, it will pause `before_swap_tables` is executed.
 
 [pt-online-schema-change documentation](https://www.percona.com/doc/percona-toolkit/2.2/pt-online-schema-change.html)
 
