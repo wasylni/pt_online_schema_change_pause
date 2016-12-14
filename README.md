@@ -17,7 +17,7 @@ example:
 
 ___
 
-
+btw, 
 `--pause-file` option in the latest `pt-online-schema-change` build (2.2.20) will do similar thing. 
 However this option will only create copy of the table, with new schema and only move data when file is deleted.
 
