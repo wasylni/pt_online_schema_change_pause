@@ -1,6 +1,6 @@
 ### `pt-online-schema-change` plugin written in Perl.
  
-Plugin when executed with your `pt-online-schema-change` command will pause in the last stage of execution, untill file `/opt/pt_schema_change_wait.txt` is deleted.
+Plugin when executed with your `pt-online-schema-change` command will pause in the last stage of execution, untill file `./pt_schema_change_wait.txt` is deleted.
 
 #####How to run:
 
@@ -8,9 +8,9 @@ just add `--plugin /path/to/fis_pt_online_schema_change_plugin.pl` to your  `pt-
 
 #####what will it do to your `pt-online-schema-change` run:
 
-it will create plain text file in `/opt/pt_schema_change_wait.txt` your `pt-online-schema-change` command should run as usual until very last step, it will pause `before_swap_tables` is executed.
+it will create plain text file in `./pt_schema_change_wait.txt` your `pt-online-schema-change` command should run as usual until very last step, it will pause `before_swap_tables` is executed.
 
-**PLEASE MAKE SURE THAT YOUR DATA IS IN SYNC BEFORE YOU DELETE `/opt/pt_schema_change_wait.txt`!**
+**PLEASE MAKE SURE THAT YOUR DATA IS IN SYNC BEFORE YOU DELETE `./pt_schema_change_wait.txt`!**
 
 [pt-online-schema-change documentation](https://www.percona.com/doc/percona-toolkit/2.2/pt-online-schema-change.html)
 
